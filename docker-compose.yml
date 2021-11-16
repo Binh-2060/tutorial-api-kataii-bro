@@ -1,0 +1,17 @@
+version: "3"
+services:
+  api:
+    build: .
+    ports:
+      - "2000:2000"
+    environment:
+     - NODE_ENV=development
+     - API_VERSION=1
+     - PORT=2000
+     - DB_HOST=206.189.33.179
+     - DB_USER=lera
+     - DB_PASSWORD=LeRa@#2020!
+     - DB_SCHEMA=car_wash
+     - DB_PORT=3306
+     - APP_ID=carwash-api
+     - LOG_LEVEL=debug
